@@ -1,0 +1,199 @@
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about{
+
+    background:#ffffff;
+
+}
+
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   LEFT COLUMN
+=========================== */
+
+.about-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.about-left h3{
+
+    font-size:1.8rem;
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+
+}
+
+.about-left p{
+
+    margin-bottom:18px;
+
+    color:#475569;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+/* ===========================
+   RIGHT COLUMN
+=========================== */
+
+.about-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.info-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:#ffffff;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    border-left:4px solid #2563eb;
+
+    transition:.3s ease;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.18);
+
+}
+
+.info-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#dbeafe;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.8rem;
+
+    flex-shrink:0;
+
+}
+
+.info-card h4{
+
+    color:#2563eb;
+
+    margin-bottom:8px;
+
+    font-size:1rem;
+
+}
+
+.info-card p{
+
+    color:#64748b;
+
+    font-size:.92rem;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-left{
+
+text-align:left;
+
+}
+
+.about-left h3{
+
+font-size:1.6rem;
+
+}
+
+.info-card{
+
+padding:18px;
+
+}
+
+.info-icon{
+
+width:55px;
+
+height:55px;
+
+font-size:1.5rem;
+
+}
+
+}

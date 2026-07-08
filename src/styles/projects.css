@@ -1,0 +1,43 @@
+.projects {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.project-image {
+  height: 220px;
+  background: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-tools {
+  color: #2563eb;
+  font-weight: 600;
+  display: block;
+  margin: 10px 0;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
